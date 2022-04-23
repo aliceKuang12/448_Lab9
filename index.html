@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<title>myHome</title>
+<style>
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #20B2AA; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  text-color: #FFFFE0;
+}
+
+.sidenav a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidenav a.active {
+  background-color: #0d736e;
+  color: white;
+}
+
+.main{
+	margin-left: 175px;
+}
+
+.sidenav a:hover {
+  color: #5eede6;
+}
+
+.iframeTest{
+	
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+    <div class ="sidenav">
+    	<br><br>
+    	<a class = "active" target = "internal" href = "Ex1.html">Multiplication Table</a>
+    	<a href = "Quiz.html" target = "internal">Culture Quiz</a>
+    	<a href = "customerFrontend.html" target = "internal">Storefront</a>
+    </div>
+    
+    <div class = "main">
+    	<h1>PHP Projects</h1>
+    	<p> Click the links on the left to view my projects! <br> ___________________________________________________________________________________________________ </p>
+    </div>
+
+	<center style = "margin-left: 150px">
+        <iFrame name = "internal" style="width: 1000px; height: 1000px;" frameborder = "0" allowfullscreen = "true" allow= "picture-in-picture"title = "iframeTest"></iframe>
+	</center>
+</body>
+
+</html>

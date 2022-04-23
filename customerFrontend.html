@@ -1,0 +1,52 @@
+<html>
+ 
+<head>
+ <meta charset=UTF-8" />
+
+ 
+ <title>My Store</title>
+		<link href = "store.css" rel = "stylesheet" type = "text/css"/>
+		<img src = "Pizza.jpg" width = "20%" height = "20%">
+		<img src = "dumplings.jpg" width = "20%" height = "20%">
+		<img src = "Chocolate.jpg" width = "20%" height = "20%">
+		<img src = "Pizza.jpg" width = "20%" height = "20%">
+		<script type = "text/javascript" src = "formChecker.js"></script>
+</head>
+ 
+<body>
+	<br> <br>
+	
+	<div id = "Menu" style = "padding: 20px; background-color : #DEB887;">
+	<h2> Items for Sale </h2>
+	<p> Pizza:          $14.95/pie </p>
+	<p> Soup Dumplings: $6.95/half-dozen </p>
+	<p> Chocolate:      $10/box</p>
+	</div>
+	
+	<form action = "customerBackend.php" method = "post" onsubmit = "validate()">
+	<p> Enter  username:  
+    <input type = "email" id = "user" name = "user" ></p>
+    <p>Confirm password:
+    <input type = "password" id = "pass" name = "pass" > 
+	</p>
+	<br>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	<h3>Order</h3>
+	Pizza:     <input type = "number" id = pizzaNum name = "pizzaNum"  ><br>
+	Dumplings: <input type = "number" id = dpgNum name = "dpgNum" > <br>
+	Chocolate: <input type = "number" id = chocNum name = "chocNum" > <br>
+	
+	<h3> Select Shipping Option </h3>
+	<input type ="radio" id= ship1 name ="ship" value = 0>Free (7-day)<br>
+	<input type ="radio" id= ship2 name ="ship" value = 50>$50 (Overnight)<br>
+	<input type ="radio" id= ship3 name ="ship" value = 5>$5 (3-day)<br>
+	
+	<br><br>
+	<input type = "reset" value = "reset" >
+	<input type = "submit" value = "submit">
+	<form>
+</body>
+
+
+</html>
+ 
